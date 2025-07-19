@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-describe("fillTank", () => {
-  const { fillTank } = require("./fillTank");
+describe('fillTank', () => {
+  const { fillTank } = require('./fillTank');
 
   it(`If the 'amount' is not given, then full tank is ordered`, () => {
     const customer = {
@@ -76,7 +76,8 @@ describe("fillTank", () => {
     expect(customer.vehicle.fuelRemains).toBe(8);
   });
 
-  it(`Round the price of the purchased fuel the to the nearest hundredth part.`, () => {
+  it(`Round the price of the purchased fuel the 
+    to the nearest hundredth part.`, () => {
     const customer = {
       money: 3000,
       vehicle: {
